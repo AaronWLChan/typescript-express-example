@@ -10,7 +10,7 @@ export class TodoController extends Controller {
     /**
      * Get Todos
      */
-    public get = async (req: Request, res: Response) => {
+    public get = async (_: Request, res: Response) => {
 
         try {
             const todos = await Todo.find()
